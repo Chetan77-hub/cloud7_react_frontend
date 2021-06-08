@@ -53,10 +53,11 @@ render(){
             <button onClick={this.handleClick} className="btn btn-success px-3" type="button">Add New</button>
                
                         <table className="table table-stripped">
-                       
+                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Action</th>
+                             </tr>
                           
                             <tbody>
                                 {this.state.employees.map(e=>
