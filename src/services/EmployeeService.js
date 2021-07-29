@@ -4,11 +4,11 @@ import axios from 'axios'
 
 class EmployeeService{
     getemployees(){
-       return axios.get("http://localhost:5000/getemployees")
+       return axios.get("api")
     }
 
     addemployee(data){
-        return axios.post("http://localhost:5000/adduser",data)
+        return axios.post("api",data)
     }
 
     deletemp(id){
