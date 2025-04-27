@@ -6,8 +6,17 @@ on:
       - master
 
 jobs:
- run-steps:
+ install-docker:
   runs-on : ubuntu-latest
   steps:
-    - name: Say Hi
-      run: echo "hi"
+    - name: Check Docker installation
+      run: |
+        docker -v
+        status=$?
+        if [ $status ne 0 ]; then
+        echo "Docker not installed"
+        else
+        echo "Docker already installed"
+        fi
+
+  
