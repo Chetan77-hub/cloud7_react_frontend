@@ -13,7 +13,7 @@ RUN npm install react-scripts@3.4.1 -g --silent
 COPY . ./
 # start app
 RUN npm run build
-RUN ls /app
+RUN ls /app/build/
 
 
 FROM nginx:1.17.1-alpine
