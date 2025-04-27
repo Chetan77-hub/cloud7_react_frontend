@@ -1,0 +1,13 @@
+name: Run simple steps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+ run steps:
+  runs-on : ubuntu-latest
+  steps:
+    - name: Say Hi
+      run: echo "hi"
