@@ -9,6 +9,8 @@ jobs:
  install-docker:
   runs-on : ubuntu-latest
   steps:
+    - name: Checkout source code
+      uses: actions/checkout@v4
     - name: Check Docker installation
       run: |
         docker -v
