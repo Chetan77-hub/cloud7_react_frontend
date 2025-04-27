@@ -18,5 +18,10 @@ jobs:
         else
         echo "Docker already installed"
         fi
+    - name: Build Docker image
+      run: |
+        docker build -t "myapp" .
+        
+      
 
   
