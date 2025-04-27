@@ -3,7 +3,7 @@ name: Run simple steps
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
  run steps:
