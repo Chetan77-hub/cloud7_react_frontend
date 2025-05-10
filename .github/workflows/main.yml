@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - develop
+      - develo
 
 jobs:
  call-build-workflow:
