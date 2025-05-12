@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - master
-      - develo
+      - develop
 
 jobs:
  call-build-workflow:
    uses: Chetan77-hub/cloud7-devops-workflows/.github/workflows/frontend.yml@master
- 
+   with:
+      environment: ${{ inputs.environment }}
       
 
   
