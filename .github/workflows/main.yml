@@ -1,11 +1,15 @@
 name: Run simple steps
 
 on:
-  push:
-    branches:
-      - master
-      - develop
-
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Provide env to build
+        required: true
+      frontend_version:
+        description: 'Frontend version to deploy'
+        required: true
+        type: string
 jobs:
  call-build-workflow:
    uses: Chetan77-hub/cloud7-devops-workflows/.github/workflows/frontend.yml@master
