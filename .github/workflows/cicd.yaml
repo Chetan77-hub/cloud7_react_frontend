@@ -13,7 +13,9 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v4
     - name: Sonar scan
+      run: echo "running sonar scan"
     - name: Build and tag Docker image
+      run: echo "Building Docker image"
      
     
   
