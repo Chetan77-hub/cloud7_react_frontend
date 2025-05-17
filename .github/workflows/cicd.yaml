@@ -21,7 +21,7 @@ jobs:
     - name: Sonar scan
       run: echo "running sonar scan"
     - name: Login to ECR repo
-      run: loggin to ecr repo 
+      run: echo "log in to ecr repo" 
     - name: Build and tag Docker image
       run: |
         echo "Building Docker image for $APP_NAME"
