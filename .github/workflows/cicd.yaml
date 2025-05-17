@@ -17,11 +17,16 @@ jobs:
       uses: actions/checkout@v4
     - name: Check env
       run: |
-        echo "Application : $APP_NAME\n Build no : $BUILD_NO"
+        echo "Running CI for Application : $APP_NAME"
     - name: Sonar scan
       run: echo "running sonar scan"
+    - name: Login to ECR repo
+      run: loggin to ecr repo 
     - name: Build and tag Docker image
-      run: echo "Building Docker image"
+      run: |
+        echo "Building Docker image for $APP_NAME"
+        docker build -t $APP_NAME .
+       
      
     
   
