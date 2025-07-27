@@ -13,16 +13,16 @@ class EmployeeService{
 
     deletemp(id){
 
-        return axios.delete("http://localhost:5000/deleteuser/"+id)
+        return axios.delete("https://cloud7poclabs.live/deleteuser/"+id)
 
     }
 
     getempbyid(id){
-         return axios.get("http://localhost:5000/getuserbyid/"+id)
+         return axios.get("https://cloud7poclabs.live/getuserbyid/"+id)
     }
 
     editemp(data){
-        return axios.put("http://localhost:5000/edituser",data)
+        return axios.put("https://cloud7poclabs.live/edituser",data)
     }
 }
 
